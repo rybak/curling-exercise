@@ -55,7 +55,7 @@ public final class Curling {
 		state = State.SHOOTING;
 		powerLevelHolder = new PowerLevelHolder();
 		// TODO start fancy power level animation here
-		Advice.showShootingAdvice(currentTeamColor, currentTeam.getLeader());
+		Advice.showShootingAdvice(currentTeam.getLeader());
 		shootingTimer = new Timer(SHOOTING_PHASE_MAX_LENGTH_MILLIS, ignored -> shoot());
 		shootingTimer.setRepeats(false);
 		shootingTimer.start();

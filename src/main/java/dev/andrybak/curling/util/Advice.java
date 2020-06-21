@@ -16,7 +16,7 @@ public final class Advice {
 		);
 	}
 
-	public static void showShootingAdvice(TeamColor currentTeamColor, Player leader) {
+	public static void showShootingAdvice(Player leader) {
 		System.out.printf("@%s: type \"%s\" to shoot!%n",
 			leader.getChatName(),
 			Command.SHOOT.getText()

@@ -37,7 +37,12 @@ public final class Team {
 			// when all players are inexperienced
 			leaderIndex = RNG.nextInt(tmp.size());
 		}
-		Player leader = tmp.remove(leaderIndex);
+		Player leader;
+		if (players.size() == 1) {
+			leader = tmp.get(leaderIndex);
+		} else {
+			leader = tmp.remove(leaderIndex);
+		}
 
 		return new Team(players, leader, tmp);
 	}

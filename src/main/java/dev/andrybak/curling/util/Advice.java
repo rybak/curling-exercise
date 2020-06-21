@@ -22,4 +22,8 @@ public final class Advice {
 			Command.SHOOT.getText()
 		);
 	}
+
+	public static void showEnterAdvice() {
+		System.out.printf("Type \"%s\" to register.%n", Command.ENTER.getText());
+	}
 }

@@ -2,6 +2,7 @@ package dev.andrybak.curling.game;
 
 import dev.andrybak.curling.physics.IceRinkModel;
 import dev.andrybak.curling.streamer_ui.TurnsCountHolder;
+import dev.andrybak.curling.util.Advice;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public final class Game {
 	public void startRegistration() {
 		state = State.REGISTRATION;
 		turnsCountHolder.randomize();
-		System.out.println("Type \"enter\" to register.");
+		Advice.showEnterAdvice();
 	}
 
 	public void register(Player p) {

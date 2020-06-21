@@ -27,6 +27,7 @@ public final class Game {
 
 	public void startRegistration() {
 		state = State.REGISTRATION;
+		turnsCountHolder.randomize();
 		System.out.println("Type \"enter\" to register.");
 	}
 
